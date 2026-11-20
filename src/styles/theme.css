@@ -1,0 +1,45 @@
+@theme {
+  --font-sans: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Colores base semánticos */
+  --color-surface: var(--base-surface);
+  --color-background: var(--base-bg);
+  --color-primary-soft: var(--base-soft);
+  --color-primary: var(--base-mid);
+  --color-primary-strong: var(--base-strong);
+  --color-text: var(--base-text);
+  --color-on-primary: var(--base-on-primary);
+
+  /* Derivados con color-mix */
+  --color-primary-50: color-mix(in srgb, var(--base-soft) 30%, var(--base-bg));
+  --color-primary-100: color-mix(in srgb, var(--base-soft) 60%, var(--base-bg));
+  --color-sidebar: color-mix(in srgb, var(--base-soft) 35%, var(--base-surface));
+  --color-muted: color-mix(in srgb, var(--base-text) 75%, transparent);
+  --color-border: color-mix(in srgb, var(--base-strong) 15%, transparent);
+
+  /* Acentos categóricos (fijos o ajustados) */
+  --color-accent-sky: #cbe6f9;
+  --color-accent-sky-strong: #2f71aa;
+  --color-accent-lavender: #e1d9fc;
+  --color-accent-lavender-strong: #6351b8;
+  --color-accent-mint: #d7efeb;
+  --color-accent-mint-strong: #307555;
+  --color-accent-rose: #f6d7e3;
+  --color-accent-rose-strong: #9e4f76;
+
+  /* Estados */
+  --color-success: #16a34a;
+  --color-warning: #eab308;
+  --color-danger: #ef4444;
+  --color-info: #0284c7;
+
+  /* Radios */
+  --radius-card: 1.25rem;
+  --radius-hero: 1.75rem;
+
+  /* Sombras teñidas */
+  --shadow-card: 0 4px 20px -2px color-mix(in srgb, var(--base-strong) 8%, transparent);
+  --shadow-soft: 0 8px 30px -4px color-mix(in srgb, var(--base-strong) 12%, transparent);
+}
+
+@custom-variant dark (&:where([data-theme=oscuro], [data-theme=oscuro] *));

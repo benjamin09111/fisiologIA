@@ -1,0 +1,68 @@
+{
+  "kpis": {
+    "globalProgress": 60,
+    "correctAnswerRate": 84
+  },
+  "courses": [
+    {
+      "courseId": "respiratoria",
+      "title": "Fisiología Respiratoria",
+      "progress": 60,
+      "completedUnits": 1,
+      "totalUnits": 3
+    },
+    {
+      "courseId": "cardiovascular",
+      "title": "Fisiología Cardiovascular",
+      "progress": 0,
+      "completedUnits": 0,
+      "totalUnits": 4
+    },
+    {
+      "courseId": "renal",
+      "title": "Fisiología Renal",
+      "progress": 0,
+      "completedUnits": 0,
+      "totalUnits": 3
+    },
+    {
+      "courseId": "nerviosa",
+      "title": "Fisiología Nerviosa",
+      "progress": 0,
+      "completedUnits": 0,
+      "totalUnits": 4
+    }
+  ],
+  "strengths": [
+    {
+      "id": "str-1",
+      "topicTitle": "Presiones y gradientes transmurales",
+      "unitTitle": "Mecánica ventilatoria",
+      "score": 92,
+      "status": "strength"
+    },
+    {
+      "id": "str-2",
+      "topicTitle": "Distensibilidad y surfactante",
+      "unitTitle": "Mecánica ventilatoria",
+      "score": 88,
+      "status": "strength"
+    }
+  ],
+  "weaknesses": [
+    {
+      "id": "wk-1",
+      "topicTitle": "Resistencia de la vía aérea (Poiseuille)",
+      "unitTitle": "Mecánica ventilatoria",
+      "score": 58,
+      "status": "weakness"
+    }
+  ],
+  "evolution": [
+    { "date": "10/10", "quizTitle": "Introducción Fisiológica", "score": 75 },
+    { "date": "17/10", "quizTitle": "Presiones Pleurales", "score": 82 },
+    { "date": "24/10", "quizTitle": "Compliance y Surfactante", "score": 88 },
+    { "date": "31/10", "quizTitle": "Mecánica Ventilatoria 1", "score": 80 },
+    { "date": "07/11", "quizTitle": "Simulación Solemne", "score": 85 }
+  ]
+}

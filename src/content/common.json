@@ -1,0 +1,13 @@
+{
+  "sidebar": {
+    "tagline": "Aprende · Comprende y Evoluciona",
+    "motivationCard": {
+      "title": "¡Tú puedes!",
+      "message": "Cada concepto que comprendes hoy es el cimiento de tu futuro profesional. ¡Sigue adelante!"
+    }
+  },
+  "brand": {
+    "appName": "FisiologIA",
+    "botName": "FisioBot"
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "att-1",
+    "quizId": "quiz-mecanica-1",
+    "quizTitle": "Evaluación: Mecánica Ventilatoria y Presiones",
+    "unitTitle": "Mecánica ventilatoria",
+    "studentName": "Angholy Fernández",
+    "userId": "usr-1",
+    "score": 80,
+    "correctCount": 4,
+    "totalCount": 5,
+    "createdAt": "2026-11-18T14:30:00Z",
+    "feedback": [
+      {
+        "questionId": "q-1",
+        "questionText": "¿Cuál es el valor típico de la presión intrapleural al final de una espiración normal en reposo?",
+        "isCorrect": true,
+        "userSelectedOptionIds": ["opt-1c"],
+        "correctOptionIds": ["opt-1c"],
+        "explanation": "Correcto: la presión intrapleural en reposo es de -5 cmH2O."
+      },
+      {
+        "questionId": "q-2",
+        "questionText": "La dipalmitoilfosfatidilcolina es el principal componente lipídico del surfactante pulmonar...",
+        "isCorrect": true,
+        "userSelectedOptionIds": ["opt-2b"],
+        "correctOptionIds": ["opt-2b"],
+        "explanation": "Correcto: disminuye la tensión superficial alveolar."
+      },
+      {
+        "questionId": "q-3",
+        "questionText": "¿Cuál de los siguientes volúmenes pulmonares NO puede medirse mediante una espirometría simple?",
+        "isCorrect": true,
+        "userSelectedOptionIds": ["opt-3c"],
+        "correctOptionIds": ["opt-3c"],
+        "explanation": "Correcto: el volumen residual no es medible por espirometría directa."
+      },
+      {
+        "questionId": "q-4",
+        "questionText": "En el árbol respiratorio humano, ¿dónde se localiza el punto de mayor resistencia al flujo de aire?",
+        "isCorrect": false,
+        "userSelectedOptionIds": ["opt-4b"],
+        "correctOptionIds": ["opt-4c"],
+        "explanation": "Recuerda que la alta ramificación en paralelo de los bronquiolos terminales reduce su resistencia combinada."
+      },
+      {
+        "questionId": "q-5",
+        "questionText": "Durante una inspiración normal tranquila, ¿cuál de los siguientes eventos ocurre?",
+        "isCorrect": true,
+        "userSelectedOptionIds": ["opt-5a", "opt-5b"],
+        "correctOptionIds": ["opt-5a", "opt-5b"],
+        "explanation": "Correcto: contracción diafragmática y negativización intrapleural."
+      }
+    ]
+  }
+]

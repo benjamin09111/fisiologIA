@@ -1,0 +1,77 @@
+[
+  {
+    "id": "q-1",
+    "courseId": "respiratoria",
+    "unitId": "mecanica-ventilatoria",
+    "unitTitle": "Mecánica ventilatoria",
+    "text": "¿Cuál es el valor típico de la presión intrapleural al final de una espiración normal en reposo (en la Capacidad Residual Funcional)?",
+    "type": "single",
+    "difficulty": "facil",
+    "options": [
+      { "id": "opt-1a", "text": "+5 cmH2O (positiva)" },
+      { "id": "opt-1b", "text": "0 cmH2O (igual a la presión atmosférica)" },
+      { "id": "opt-1c", "text": "-5 cmH2O (subatmosférica)" },
+      { "id": "opt-1d", "text": "-30 cmH2O" }
+    ]
+  },
+  {
+    "id": "q-2",
+    "courseId": "respiratoria",
+    "unitId": "mecanica-ventilatoria",
+    "unitTitle": "Mecánica ventilatoria",
+    "text": "La dipalmitoilfosfatidilcolina es el principal componente lipídico del surfactante pulmonar. ¿Cuál es su función primordial?",
+    "type": "single",
+    "difficulty": "medio",
+    "options": [
+      { "id": "opt-2a", "text": "Aumentar la resistencia en los bronquíolos terminales" },
+      { "id": "opt-2b", "text": "Disminuir la tensión superficial en los alvéolos de menor radio, evitando su colapso" },
+      { "id": "opt-2c", "text": "Incrementar la presión intrapleural durante la inspiración forzada" },
+      { "id": "opt-2d", "text": "Estimular la contracción de la musculatura lisa bronquial" }
+    ]
+  },
+  {
+    "id": "q-3",
+    "courseId": "respiratoria",
+    "unitId": "mecanica-ventilatoria",
+    "unitTitle": "Mecánica ventilatoria",
+    "text": "¿Cuál de los siguientes volúmenes pulmonares NO puede medirse mediante una espirometría simple?",
+    "type": "single",
+    "difficulty": "facil",
+    "options": [
+      { "id": "opt-3a", "text": "Volumen corriente (VC)" },
+      { "id": "opt-3b", "text": "Volumen de reserva inspiratoria (VRI)" },
+      { "id": "opt-3c", "text": "Volumen residual (VR)" },
+      { "id": "opt-3d", "text": "Capacidad vital (CV)" }
+    ]
+  },
+  {
+    "id": "q-4",
+    "courseId": "respiratoria",
+    "unitId": "mecanica-ventilatoria",
+    "unitTitle": "Mecánica ventilatoria",
+    "text": "En el árbol respiratorio humano, ¿dónde se localiza el punto de mayor resistencia al flujo de aire?",
+    "type": "single",
+    "difficulty": "medio",
+    "options": [
+      { "id": "opt-4a", "text": "En los alvéolos distales" },
+      { "id": "opt-4b", "text": "En los bronquiolos respiratorios terminales" },
+      { "id": "opt-4c", "text": "En los bronquios de mediano calibre (generaciones 3 a 7)" },
+      { "id": "opt-4d", "text": "En los sacos alveolares" }
+    ]
+  },
+  {
+    "id": "q-5",
+    "courseId": "respiratoria",
+    "unitId": "mecanica-ventilatoria",
+    "unitTitle": "Mecánica ventilatoria",
+    "text": "Durante una inspiración normal tranquila, ¿cuál de los siguientes eventos ocurre?",
+    "type": "multiple",
+    "difficulty": "medio",
+    "options": [
+      { "id": "opt-5a", "text": "El diafragma se contrae y desciende" },
+      { "id": "opt-5b", "text": "La presión intrapleural se vuelve más negativa (de -5 a ~-8 cmH2O)" },
+      { "id": "opt-5c", "text": "La presión alveolar se hace positiva respecto a la boca" },
+      { "id": "opt-5d", "text": "Los músculos intercostales internos se contraen activamente" }
+    ]
+  }
+]

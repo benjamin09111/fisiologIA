@@ -1,0 +1,52 @@
+/* Paletas de color - Variables base */
+
+:root,
+[data-theme='lavanda'] {
+  --base-surface: #ffffff;
+  --base-soft: #e1d9fc;
+  --base-mid: #a79af2;
+  --base-strong: #5945b0;
+  --base-bg: color-mix(in srgb, var(--base-soft) 25%, #ffffff);
+  --base-text: color-mix(in srgb, var(--base-strong) 30%, #15162b);
+  --base-on-primary: #ffffff;
+}
+
+[data-theme='oceano'] {
+  --base-surface: #ffffff;
+  --base-soft: #cbe6f9;
+  --base-mid: #70b6e7;
+  --base-strong: #2f71aa;
+  --base-bg: color-mix(in srgb, var(--base-soft) 25%, #ffffff);
+  --base-text: color-mix(in srgb, var(--base-strong) 30%, #101e2c);
+  --base-on-primary: #ffffff;
+}
+
+[data-theme='menta'] {
+  --base-surface: #ffffff;
+  --base-soft: #d7efeb;
+  --base-mid: #8cd0b2;
+  --base-strong: #307555;
+  --base-bg: color-mix(in srgb, var(--base-soft) 25%, #ffffff);
+  --base-text: color-mix(in srgb, var(--base-strong) 35%, #0d1e17);
+  --base-on-primary: #ffffff;
+}
+
+[data-theme='rosa'] {
+  --base-surface: #ffffff;
+  --base-soft: #f6d7e3;
+  --base-mid: #e692b8;
+  --base-strong: #9e4f76;
+  --base-bg: color-mix(in srgb, var(--base-soft) 25%, #ffffff);
+  --base-text: color-mix(in srgb, var(--base-strong) 30%, #25101a);
+  --base-on-primary: #ffffff;
+}
+
+[data-theme='oscuro'] {
+  --base-surface: #2d3346;
+  --base-soft: color-mix(in srgb, #2d3346 65%, #7c72df);
+  --base-mid: #7c72df;
+  --base-strong: #bdb5ff;
+  --base-bg: #181926;
+  --base-text: #f3f1fe;
+  --base-on-primary: #181926;
+}

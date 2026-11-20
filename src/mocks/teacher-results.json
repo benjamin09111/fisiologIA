@@ -1,0 +1,37 @@
+{
+  "unitsStats": [
+    {
+      "unitId": "mecanica-ventilatoria",
+      "unitTitle": "Mecánica ventilatoria",
+      "courseTitle": "Fisiología Respiratoria",
+      "contentProgress": 64,
+      "correctAnswerRate": 78,
+      "mostFailedQuestions": [
+        {
+          "questionId": "q-4",
+          "text": "Localización del punto de mayor resistencia al flujo de aire en el árbol traqueobronquial",
+          "failureRate": 42
+        },
+        {
+          "questionId": "q-5",
+          "text": "Eventos de presiones durante la fase inspiratoria tranquila",
+          "failureRate": 31
+        }
+      ]
+    },
+    {
+      "unitId": "intercambio-gaseoso",
+      "unitTitle": "Difusión e intercambio gaseoso",
+      "courseTitle": "Fisiología Respiratoria",
+      "contentProgress": 71,
+      "correctAnswerRate": 81,
+      "mostFailedQuestions": [
+        {
+          "questionId": "q-fick",
+          "text": "Factores limitantes de la difusión según la Ley de Fick",
+          "failureRate": 36
+        }
+      ]
+    }
+  ]
+}

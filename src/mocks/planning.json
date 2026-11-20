@@ -1,0 +1,61 @@
+{
+  "evaluations": [
+    {
+      "id": "eval-1",
+      "title": "Solemne Fisiología",
+      "course": "Fisiología Respiratoria y Cardiovascular",
+      "date": "2026-10-24",
+      "time": "08:30 - 10:30",
+      "location": "Auditorio Central de Medicina",
+      "type": "solemne"
+    },
+    {
+      "id": "eval-2",
+      "title": "Gynkana Cabeza y Cuello",
+      "course": "Anatomofisiología Aplicada",
+      "date": "2026-10-31",
+      "time": "14:00 - 17:00",
+      "location": "Pabellón de Habilidades Clínicas",
+      "type": "gynkana"
+    },
+    {
+      "id": "eval-3",
+      "title": "Control 2 · Mecánica Ventilatoria",
+      "course": "Fisiología Respiratoria",
+      "date": "2026-11-14",
+      "time": "10:00 - 11:00",
+      "location": "Aula Virtual / Sala 204",
+      "type": "estudio"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-1",
+      "title": "Repaso de curvas presión-volumen",
+      "date": "2026-10-20",
+      "type": "estudio",
+      "description": "Sesión de estudio grupal para preparar la Solemne."
+    },
+    {
+      "id": "evt-2",
+      "title": "Solemne 1 Fisiología General",
+      "date": "2026-10-24",
+      "type": "solemne",
+      "description": "Evaluación presencial obligatoria."
+    },
+    {
+      "id": "evt-3",
+      "title": "Gynkana Práctica de Laboratorio",
+      "date": "2026-10-31",
+      "type": "gynkana",
+      "description": "Estaciones de reconocimiento práctico."
+    },
+    {
+      "id": "evt-4",
+      "title": "Resolución de casos clínicos V/Q",
+      "date": "2026-11-05",
+      "type": "estudio",
+      "description": "Taller integrador de difusión y perfusión."
+    }
+  ]
+}

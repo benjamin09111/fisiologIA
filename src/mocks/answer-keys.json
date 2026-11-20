@@ -1,0 +1,27 @@
+[
+  {
+    "questionId": "q-1",
+    "correctOptionIds": ["opt-1c"],
+    "explanation": "Al final de la espiración normal (en CRF), el retroceso elástico del pulmón hacia adentro se opone al retroceso elástico de la pared torácica hacia afuera, creando una presión intrapleural subatmosférica de aproximadamente -5 cmH2O."
+  },
+  {
+    "questionId": "q-2",
+    "correctOptionIds": ["opt-2b"],
+    "explanation": "El surfactante sintetizado por los neumocitos tipo II disminuye la tensión superficial en proporción directa a la concentración de moléculas, estabilizando los alvéolos pequeños según la ley de Laplace (P = 2T/r)."
+  },
+  {
+    "questionId": "q-3",
+    "correctOptionIds": ["opt-3c"],
+    "explanation": "El volumen residual es el aire que permanece en los pulmones incluso después de una espiración máxima. Dado que no puede exhalarse hacia el espirómetro, requiere técnicas indirectas como dilución de helio o pletismografía."
+  },
+  {
+    "questionId": "q-4",
+    "correctOptionIds": ["opt-4c"],
+    "explanation": "Aunque los bronquiolos individuales son delgados, existen millones en paralelo, lo que resulta en una enorme área de sección transversal total. Por ello, la máxima resistencia al flujo se sitúa en los bronquios de mediano calibre."
+  },
+  {
+    "questionId": "q-5",
+    "correctOptionIds": ["opt-5a", "opt-5b"],
+    "explanation": "Durante la inspiración tranquila, la contracción del diafragma desciende el piso torácico, volviendo la presión intrapleural más negativa (-8 cmH2O), lo que a su vez negativiza la presión alveolar e ingresa aire a los pulmones."
+  }
+]

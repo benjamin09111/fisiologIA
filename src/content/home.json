@@ -1,0 +1,59 @@
+{
+  "greetingSubtitle": "¿Qué aprenderemos hoy?",
+  "hero": {
+    "title": "Aprende Fisiología con FisioBot",
+    "description": "Explora temas interactivos, refuerza con cuestionarios inteligentes y resuelve dudas en tiempo real con tu tutor de IA.",
+    "ctaText": "Continuar estudiando",
+    "botBubble": "¡Hola! Soy FisioBot ♡ ¿En qué puedo ayudarte hoy?"
+  },
+  "continueSection": {
+    "badge": "En curso",
+    "ctaText": "Retomar"
+  },
+  "quickActions": [
+    {
+      "id": "fisioia",
+      "tone": "sky",
+      "title": "Preguntar a FisioBot",
+      "description": "Despeja dudas clínicas al instante",
+      "href": "/fisioia"
+    },
+    {
+      "id": "estudiar",
+      "tone": "lavender",
+      "title": "Estudiar",
+      "description": "Navega las unidades y temas",
+      "href": "/cursos"
+    },
+    {
+      "id": "practicar",
+      "tone": "mint",
+      "title": "Practicar",
+      "description": "Banco de preguntas y cuestionarios",
+      "href": "/ejercicios"
+    },
+    {
+      "id": "progreso",
+      "tone": "rose",
+      "title": "Mi progreso",
+      "description": "Revisa tus métricas de estudio",
+      "href": "/progreso"
+    }
+  ],
+  "modulesSection": {
+    "title": "Nuestros módulos",
+    "actionText": "Ver todos los módulos",
+    "actionHref": "/cursos"
+  },
+  "planningSection": {
+    "title": "Mi planificación",
+    "actionText": "Ver calendario",
+    "actionHref": "/planificacion",
+    "evaluationsTitle": "Próximas evaluaciones"
+  },
+  "fisioIACard": {
+    "title": "¿Dudas con la materia?",
+    "description": "FisioBot está listo para explicarte cualquier mecanismo fisiológico paso a paso.",
+    "ctaText": "Abrir chat"
+  }
+}

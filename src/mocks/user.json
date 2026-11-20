@@ -1,0 +1,11 @@
+{
+  "id": "usr-1",
+  "name": "Angholy Fernández",
+  "initials": "AF",
+  "email": "angholy.fernandez@med.fisiologia.cl",
+  "career": "Medicina",
+  "role": "student",
+  "avatarUrl": null,
+  "currentCourseId": "respiratoria",
+  "currentUnitId": "mecanica-ventilatoria"
+}

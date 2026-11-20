@@ -1,0 +1,185 @@
+[
+  {
+    "id": "respiratoria",
+    "title": "Fisiología Respiratoria",
+    "description": "Mecánica ventilatoria, difusión de gases, transporte de O2/CO2 y regulación de la respiración.",
+    "imageSrc": null,
+    "status": "in_progress",
+    "progress": 60,
+    "currentUnitNumber": 1,
+    "currentUnitTitle": "Mecánica ventilatoria",
+    "units": [
+      {
+        "id": "mecanica-ventilatoria",
+        "courseId": "respiratoria",
+        "number": 1,
+        "title": "Mecánica ventilatoria",
+        "description": "Presiones intrapleurales, distensibilidad pulmonar y curva de volumen-presión.",
+        "topicsCount": 4,
+        "completedTopicsCount": 2,
+        "progress": 60,
+        "status": "in_progress",
+        "topics": [
+          {
+            "id": "presiones-y-gradientes",
+            "title": "Presiones y gradientes transmurales",
+            "description": "Presión intrapleural, alveolar y transpulmonar en ciclo respiratorio.",
+            "completed": true,
+            "order": 1,
+            "keyPoints": [
+              "La presión intrapleural es subatmosférica durante la respiración tranquila (-5 cmH2O en CRF).",
+              "La presión transpulmonar determina el volumen de distensión alveolar.",
+              "En inspiración, el diafragma desciende y la presión alveolar se hace negativa respecto a la boca."
+            ],
+            "content": "La mecánica ventilatoria se rige por diferencias de presión entre el alvéolo y la atmósfera exterior. Durante el reposo al final de una espiración normal (Capacidad Residual Funcional), las fuerzas elásticas de retroceso hacia adentro del pulmón se equilibran exactamente con la tendencia de la pared torácica a expandirse hacia afuera. Este equilibrio genera una presión intrapleural negativa sostenida que evita el colapso alveolar."
+          },
+          {
+            "id": "distensibilidad-compliance",
+            "title": "Distensibilidad (Compliance) y surfactante",
+            "description": "Propiedades elásticas pulmonares y papel del surfactante en la tensión superficial.",
+            "completed": true,
+            "order": 2,
+            "keyPoints": [
+              "La compliance estática normal del sistema respiratorio es aproximadamente 100 ml/cmH2O.",
+              "Los neumocitos tipo II sintetizan el surfactante pulmonar (dipalmitoilfosfatidilcolina).",
+              "El surfactante disminuye la tensión superficial en alvéolos pequeños, estabilizándolos."
+            ],
+            "content": "La distensibilidad pulmonar representa el cambio de volumen por unidad de cambio en la presión transpulmonar. El surfactante pulmonar reduce drásticamente la tensión superficial en la interfase aire-líquido alveolar, previniendo el colapso (atelectasia) de los alvéolos de menor radio según la ley de Laplace (P = 2T/r)."
+          },
+          {
+            "id": "resistencia-via-aerea",
+            "title": "Resistencia de la vía aérea y flujo",
+            "description": "Resistencia según radio de bronquios y bronquiolos, ley de Poiseuille.",
+            "completed": false,
+            "order": 3,
+            "keyPoints": [
+              "La mayor parte de la resistencia de la vía aérea se localiza en bronquios medianos (generaciones 3-7).",
+              "La resistencia es inversamente proporcional a la cuarta potencia del radio (Poiseuille).",
+              "El tono simpático produce broncodilatación (receptores beta-2)."
+            ],
+            "content": "El flujo de aire a través del árbol traqueobronquial depende de la diferencia de presión impulsora y de la resistencia friccional de la vía aérea. Debido a la enorme área de sección transversal acumulada en las vías aéreas distales (bronquiolos terminales), la mayor resistencia al flujo ocurre en los bronquios de tamaño mediano."
+          },
+          {
+            "id": "volumenes-capacidades",
+            "title": "Volúmenes y capacidades pulmonares",
+            "description": "Espirometría simple, volumen corriente, reserva inspiratoria/espiratoria y CRF.",
+            "completed": false,
+            "order": 4,
+            "keyPoints": [
+              "El volumen corriente (VC o Vt) en reposo es de ~500 ml.",
+              "El volumen residual (VR) no puede medirse con espirometría simple.",
+              "La Capacidad Vital (CV) es la suma de VC + VRI + VRE."
+            ],
+            "content": "Los volúmenes pulmonares reflejan el estado funcional del sistema respiratorio. La espirometría mide volúmenes dinámicos y capacidades movilizables. Aquellas capacidades que incluyen el volumen residual, como la Capacidad Pulmonar Total (CPT) y la Capacidad Residual Funcional (CRF), requieren métodos de dilución de gases o pletismografía corporal."
+          }
+        ]
+      },
+      {
+        "id": "intercambio-gaseoso",
+        "courseId": "respiratoria",
+        "number": 2,
+        "title": "Difusión e intercambio gaseoso",
+        "description": "Barrera alvéolo-capilar, ley de Fick y relación ventilación/perfusión (V/Q).",
+        "topicsCount": 3,
+        "completedTopicsCount": 0,
+        "progress": 0,
+        "status": "locked",
+        "topics": [
+          {
+            "id": "ley-de-fick",
+            "title": "Ley de Fick y difusión",
+            "description": "Gradiente de presión parcial, espesor de la membrana y solubilidad.",
+            "completed": false,
+            "order": 1,
+            "keyPoints": ["CO2 difunde 20 veces más rápido que O2 debido a su mayor solubilidad."],
+            "content": "La velocidad de difusión de un gas a través de la membrana alvéolo-capilar es directamente proporcional al área y al gradiente de presión parcial, e inversamente proporcional al espesor de la membrana."
+          }
+        ]
+      },
+      {
+        "id": "transporte-gases",
+        "courseId": "respiratoria",
+        "number": 3,
+        "title": "Transporte de oxígeno y dióxido de carbono",
+        "description": "Curva de disociación de la hemoglobina, efecto Bohr y efecto Haldane.",
+        "topicsCount": 3,
+        "completedTopicsCount": 0,
+        "progress": 0,
+        "status": "locked",
+        "topics": []
+      }
+    ]
+  },
+  {
+    "id": "cardiovascular",
+    "title": "Fisiología Cardiovascular",
+    "description": "Electrocardiografía, ciclo cardíaco, hemodinámica, regulación del gasto cardíaco y presión arterial.",
+    "imageSrc": null,
+    "status": "locked",
+    "progress": 0,
+    "currentUnitNumber": 1,
+    "currentUnitTitle": "Ciclo cardíaco y gasto",
+    "units": [
+      {
+        "id": "ciclo-cardiaco",
+        "courseId": "cardiovascular",
+        "number": 1,
+        "title": "Ciclo cardíaco y fases mecánicas",
+        "description": "Sístole, diástole, presiones intracavitarias y ruidos cardíacos.",
+        "topicsCount": 4,
+        "completedTopicsCount": 0,
+        "progress": 0,
+        "status": "locked",
+        "topics": []
+      }
+    ]
+  },
+  {
+    "id": "renal",
+    "title": "Fisiología Renal",
+    "description": "Filtración glomerular, reabsorción tubular, secreción, equilibrio ácido-base y osmolaridad.",
+    "imageSrc": null,
+    "status": "locked",
+    "progress": 0,
+    "currentUnitNumber": 1,
+    "currentUnitTitle": "Filtración glomerular",
+    "units": [
+      {
+        "id": "filtracion-glomerular",
+        "courseId": "renal",
+        "number": 1,
+        "title": "Filtración glomerular y hemodinámica renal",
+        "description": "Fuerzas de Starling glomerulares y autorregulación del flujo plasmático.",
+        "topicsCount": 3,
+        "completedTopicsCount": 0,
+        "progress": 0,
+        "status": "locked",
+        "topics": []
+      }
+    ]
+  },
+  {
+    "id": "nerviosa",
+    "title": "Fisiología Nerviosa",
+    "description": "Potencial de acción, sinapsis química y eléctrica, sistema nervioso autónomo y sensitivo.",
+    "imageSrc": null,
+    "status": "locked",
+    "progress": 0,
+    "currentUnitNumber": 1,
+    "currentUnitTitle": "Potencial de reposo y acción",
+    "units": [
+      {
+        "id": "potencial-accion",
+        "courseId": "nerviosa",
+        "number": 1,
+        "title": "Excitabilidad celular y potencial de acción",
+        "description": "Canales iónicos voltaje-dependientes, fase de despolarización y período refractario.",
+        "topicsCount": 4,
+        "completedTopicsCount": 0,
+        "progress": 0,
+        "status": "locked",
+        "topics": []
+      }
+    ]
+  }
+]
