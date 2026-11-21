@@ -19,7 +19,21 @@ export const unitStatsSchema = z.object({
 
 export type UnitStats = z.infer<typeof unitStatsSchema>;
 
+export const teacherProfileSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  section: z.string(),
+  title: z.string(),
+  courseName: z.string(),
+});
+
+export type TeacherProfile = z.infer<typeof teacherProfileSchema>;
+
 export const teacherDashboardSchema = z.object({
+  teacherId: z.string().optional(),
+  teacherName: z.string().optional(),
+  section: z.string().optional(),
+  anonymousStudentCount: z.number().default(48),
   unitsStats: z.array(unitStatsSchema),
 });
 

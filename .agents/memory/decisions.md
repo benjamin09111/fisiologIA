@@ -65,3 +65,14 @@ Formato: `## ADR-NNN — Título (fecha)` · Contexto · Decisión · Consecuenc
 
 ## ADR-014 — Rol mock y React Compiler (2026-11-20)
 - **Decisión:** `switchRole` queda disponible solo en desarrollo como mecanismo temporal hasta integrar login; React Compiler permanece desactivado y se elimina su plugin.
+
+## ADR-015 — Módulo Mis Notas y escala académica (2026-11-20)
+- **Contexto:** el estudiante requiere visibilidad de sus calificaciones oficiales, ponderaciones y reglas del curso.
+- **Decisión:** nuevo módulo `/notas` con escala universitaria estándar 1.0 a 7.0 (punto base 1.0, nota de aprobación 4.0, eximición 5.5). Cálculo automático de promedio ponderado y nota mínima requerida en evaluaciones pendientes.
+
+## ADR-016 — Biblioteca exclusiva en formato PDF (2026-11-20)
+- **Decisión:** la biblioteca digital aloja únicamente material en PDF, clasificado en dos secciones principales ("Pruebas anteriores" y "Material de estudio") y filtrable por materia (`FisiologIA`, `PatologIA`).
+
+## ADR-017 — Vínculo anónimo Alumno-Docente y exclusión de FisioIA (2026-11-20)
+- **Decisión:** el alumno selecciona a su profesor/sección en `/configuracion`; los datos se consolidan anónimamente para la analítica del docente en `/docente` sin exponer nombres. FisioIA se restringe a rol estudiante y se remueve de la navegación docente.
+

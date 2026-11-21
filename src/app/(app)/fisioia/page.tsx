@@ -1,13 +1,42 @@
 import * as React from 'react';
-import { Send } from 'lucide-react';
+import { Send, ShieldAlert } from 'lucide-react';
 import { PageHeader } from '@/components/layout/PageHeader';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Mascot } from '@/components/brand/Mascot';
 import { SpeechBubble } from '@/components/brand/SpeechBubble';
+import { getCurrentUser } from '@/services/userService';
 
-export default function FisioIAPage() {
+export default async function FisioIAPage() {
+  const user = await getCurrentUser();
+
+  if (user.role === 'teacher') {
+    return (
+      <div className="space-y-6">
+        <PageHeader
+          title="FisioIA"
+          subtitle="Tutor virtual para estudiantes"
+          breadcrumbs={[{ label: 'Panel', href: '/docente' }, { label: 'FisioIA' }]}
+        />
+        <Card className="flex flex-col items-center justify-center p-8 text-center sm:p-12">
+          <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400">
+            <ShieldAlert className="h-8 w-8" />
+          </div>
+          <h2 className="text-lg font-bold text-text">Tutor exclusivo para estudiantes</h2>
+          <p className="mt-2 max-w-md text-sm text-muted">
+            FisioIA está diseñado exclusivamente como tutor inteligente y asistente de estudio interactivo para alumnos.
+          </p>
+          <div className="mt-6">
+            <Button href="/docente" variant="soft">
+              Volver al Panel docente
+            </Button>
+          </div>
+        </Card>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-6">
       <PageHeader

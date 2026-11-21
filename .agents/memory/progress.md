@@ -23,6 +23,13 @@ Plan detallado: `PLAN_IMPLEMENTACION.md`.
 - [x] Fase 13 — QA final y documentación (auditoría Axe WCAG 2.1 AA, 60 tests E2E verdes) (2026-11-20)
 - [x] Correcciones RF-14/RF-26: progreso limitado a avance y aciertos; docente agregado sin nombres (2026-11-20)
 - [x] CSP Supabase, rol mock solo desarrollo y React Compiler desactivado (2026-11-20)
+- [x] Mejoras de feedback de usuario (2026-11-20):
+  - [x] 1. Cursos estilo online interactivo: actividades secuenciales y quizes de cierre por unidad (`UnitActivitiesChecklist`).
+  - [x] 2. Checklist interactivo con tickets de completitud y registro automático de fecha/hora en unidades y `/progreso`.
+  - [x] 3. Biblioteca digital exclusiva PDF: secciones ("Pruebas anteriores", "Material de estudio") y categorías (FisiologIA, PatologIA).
+  - [x] 4. Nuevo módulo "Mis notas" (`/notas`): escala estándar universitaria chilena (base 1.0 a 7.0, aprobación 4.0), promedio ponderado automático, notas requeridas y reglamento.
+  - [x] 5. Vínculo anónimo Alumno-Docente: selección de docente/sección en `/configuracion` y panel docente consolidado 100% anónimo (`/docente`). FisioIA retirado de la vista docente.
+  - [x] 6. Opción Google Calendar Mock: acción y modal de sincronización en `/planificacion` y widget de `/inicio`.
 
 ## Inventario UI (`src/components/ui/`)
 

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "docente-1",
+    "name": "Dr. Carlos Mendoza",
+    "section": "Sección 1 (Cátedra A)",
+    "title": "Profesor Titular de Fisiología",
+    "courseName": "Fisiología Humana"
+  },
+  {
+    "id": "docente-2",
+    "name": "Dra. Marcela Silva",
+    "section": "Sección 2 (Cátedra B)",
+    "title": "Profesora Asistente de Fisiología",
+    "courseName": "Fisiología Humana"
+  },
+  {
+    "id": "docente-3",
+    "name": "Dr. Alejandro Valenzuela",
+    "section": "Sección 3 (Seminarios Clínicos)",
+    "title": "Docente Clínico Adjunto",
+    "courseName": "Fisiología Humana"
+  }
+]

@@ -5,11 +5,15 @@ import { Card } from '@/components/ui/Card';
 import { ThemeSelector } from '@/features/settings/ThemeSelector';
 import { ProfileForm } from '@/features/settings/ProfileForm';
 import { getCurrentUser } from '@/services/userService';
+import { getTeachersList } from '@/services/teacherService';
 import { THEME_COOKIE_NAME } from '@/lib/theme-script';
 import { themeSchema, type ThemeSchemaType } from '@/schemas/theme';
 
 export default async function ConfiguracionPage() {
-  const user = await getCurrentUser();
+  const [user, teachers] = await Promise.all([
+    getCurrentUser(),
+    getTeachersList(),
+  ]);
   const cookieStore = await cookies();
   const rawTheme = cookieStore.get(THEME_COOKIE_NAME)?.value;
   const themeResult = themeSchema.safeParse(rawTheme);
@@ -27,7 +31,7 @@ export default async function ConfiguracionPage() {
         {/* Profile Card */}
         <Card className="p-6 md:p-8">
           <h2 className="mb-4 text-lg font-bold text-text">Información personal</h2>
-          <ProfileForm user={user} />
+          <ProfileForm user={user} teachers={teachers} />
         </Card>
 
         {/* Theme Palette Selector Card */}

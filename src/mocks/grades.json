@@ -1,0 +1,89 @@
+{
+  "courseId": "respiratoria",
+  "courseName": "Fisiología Respiratoria y Humana",
+  "baseScore": 1.0,
+  "passScore": 4.0,
+  "maxScore": 7.0,
+  "rulesExplanation": "La calificación final se compone de un 70% de Cátedra teórica y un 30% de Laboratorios y pasos prácticos. La nota mínima de aprobación es 4.0 sobre 7.0 (con base 1.0 y 60% de exigencia para el 4.0). Quienes obtengan un promedio ponderado final igual o superior a 5.5 se eximen del examen final.",
+  "categoryRules": [
+    {
+      "id": "catedra",
+      "name": "Cátedra Teórica",
+      "weightPercent": 70,
+      "description": "Comprende 2 evaluaciones solemnes parciales (30% y 35% de cátedra) y el promedio de los quizes semanales acumulativos (35% de cátedra)."
+    },
+    {
+      "id": "laboratorio",
+      "name": "Laboratorios y Talleres",
+      "weightPercent": 30,
+      "description": "2 informes de paso práctico (50% cada uno): Mecánica Ventilatoria / Espirometría y Difusión de Gases."
+    }
+  ],
+  "grades": [
+    {
+      "id": "gr-1",
+      "name": "Solemne 1 · Mecánica y Dinámica Ventilatoria",
+      "category": "Cátedra Teórica",
+      "categoryWeightPercent": 30,
+      "courseWeightPercent": 21,
+      "score": 5.8,
+      "maxScore": 7.0,
+      "minPassScore": 4.0,
+      "date": "2026-10-24",
+      "status": "graded",
+      "feedback": "Excelente dominio en cálculos de compliance y presiones transmurales. Reforzar gradientes alveolares."
+    },
+    {
+      "id": "gr-2",
+      "name": "Quizes Semanales (Promedio acumulado)",
+      "category": "Cátedra Teórica",
+      "categoryWeightPercent": 35,
+      "courseWeightPercent": 24.5,
+      "score": 6.2,
+      "maxScore": 7.0,
+      "minPassScore": 4.0,
+      "date": "2026-11-15",
+      "status": "graded",
+      "feedback": "Constancia destacada en las evaluaciones formativas y quizes de cierre de unidad."
+    },
+    {
+      "id": "gr-3",
+      "name": "Paso Práctico 1 · Espirometría y Volúmenes",
+      "category": "Laboratorios y Talleres",
+      "categoryWeightPercent": 50,
+      "courseWeightPercent": 15,
+      "score": 6.5,
+      "maxScore": 7.0,
+      "minPassScore": 4.0,
+      "date": "2026-10-31",
+      "status": "graded",
+      "feedback": "Correcta interpretación de curvas de flujo-volumen y maniobra de FVC."
+    },
+    {
+      "id": "gr-4",
+      "name": "Solemne 2 · Intercambio y Transporte de Gases",
+      "category": "Cátedra Teórica",
+      "categoryWeightPercent": 35,
+      "courseWeightPercent": 24.5,
+      "score": null,
+      "maxScore": 7.0,
+      "minPassScore": 4.0,
+      "date": "2026-12-05",
+      "status": "pending",
+      "feedback": "Programada para el 05 de diciembre en Auditorio Central."
+    },
+    {
+      "id": "gr-5",
+      "name": "Paso Práctico 2 · Difusión y Oximetría",
+      "category": "Laboratorios y Talleres",
+      "categoryWeightPercent": 50,
+      "courseWeightPercent": 15,
+      "score": null,
+      "maxScore": 7.0,
+      "minPassScore": 4.0,
+      "date": "2026-12-10",
+      "status": "pending",
+      "feedback": "Sesión práctica en Laboratorio de Fisiología Aplicada."
+    }
+  ]
+}

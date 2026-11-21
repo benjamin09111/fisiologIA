@@ -10,6 +10,7 @@ const ROUTES = [
   '/configuracion',
   '/biblioteca',
   '/fisioia',
+  '/notas',
 ];
 
 test.describe('Accessibility (WCAG 2.1 AA via Axe)', () => {

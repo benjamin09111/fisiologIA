@@ -17,11 +17,13 @@ import {
   LayoutDashboard,
   HelpCircle,
   History,
+  GraduationCap,
 } from 'lucide-react';
 
 const ICON_MAP: Record<NavIconType, React.ComponentType<{ className?: string }>> = {
   home: Home,
   courses: BookOpen,
+  grades: GraduationCap,
   planning: Calendar,
   library: Library,
   fisioia: Bot,

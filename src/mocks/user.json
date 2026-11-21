@@ -6,6 +6,7 @@
   "career": "Medicina",
   "role": "student",
   "avatarUrl": null,
+  "assignedTeacherId": "docente-1",
   "currentCourseId": "respiratoria",
   "currentUnitId": "mecanica-ventilatoria"
 }

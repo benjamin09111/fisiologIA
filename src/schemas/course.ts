@@ -15,6 +15,22 @@ export const topicSchema = z.object({
 
 export type Topic = z.infer<typeof topicSchema>;
 
+export const activityTypeSchema = z.enum(['reading', 'video', 'interactive', 'quiz']);
+export type ActivityType = z.infer<typeof activityTypeSchema>;
+
+export const activitySchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  type: activityTypeSchema,
+  durationMinutes: z.number(),
+  completed: z.boolean(),
+  completedAt: z.string().nullable().optional(),
+  order: z.number(),
+  quizId: z.string().optional(),
+});
+
+export type Activity = z.infer<typeof activitySchema>;
+
 export const unitSchema = z.object({
   id: z.string(),
   courseId: z.string(),
@@ -26,6 +42,7 @@ export const unitSchema = z.object({
   progress: z.number().min(0).max(100),
   status: contentStatusSchema,
   topics: z.array(topicSchema),
+  activities: z.array(activitySchema).default([]),
 });
 
 export type Unit = z.infer<typeof unitSchema>;

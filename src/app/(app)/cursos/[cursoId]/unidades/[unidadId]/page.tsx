@@ -9,7 +9,8 @@ import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { ProgressBar } from '@/components/ui/ProgressBar';
-import { CheckCircle2, Circle, Sparkles, ChevronRight, BookOpen } from 'lucide-react';
+import { UnitActivitiesChecklist } from '@/features/courses/UnitActivitiesChecklist';
+import { CheckCircle2, Circle, Sparkles, ChevronRight, BookOpen, Layers } from 'lucide-react';
 
 export async function generateMetadata({
   params,
@@ -83,6 +84,19 @@ export default async function UnidadDetailPage({
           <ProgressBar value={unit.progress} showLabel />
         </div>
       </Card>
+
+      {/* Online Course Activities & Interactive Checklist */}
+      {unit.activities && unit.activities.length > 0 && (
+        <div className="space-y-4">
+          <h3 className="text-base font-bold text-text tracking-tight flex items-center gap-2">
+            <Layers className="h-4 w-4 text-primary-strong" />
+            <span>Ruta de actividades y evaluaciones</span>
+          </h3>
+          <UnitActivitiesChecklist
+            initialActivities={unit.activities}
+          />
+        </div>
+      )}
 
       {/* Topics list */}
       <div className="space-y-4">

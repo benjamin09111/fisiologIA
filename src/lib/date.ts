@@ -69,3 +69,23 @@ export function getSiblingMonthStrings(year: number, month: number): { prev: str
     next: formatYearMonth(nextDate),
   };
 }
+
+/**
+ * Formats an ISO date string into a friendly activity completion timestamp.
+ * E.g., '2026-11-20T14:32:00Z' -> '20 nov, 14:32'
+ */
+export function formatActivityDateTime(isoDate?: string | null): string {
+  if (!isoDate) return '';
+  try {
+    const d = new Date(isoDate);
+    if (isNaN(d.getTime())) return isoDate;
+    return new Intl.DateTimeFormat('es-CL', {
+      day: 'numeric',
+      month: 'short',
+      hour: '2-digit',
+      minute: '2-digit',
+    }).format(d);
+  } catch {
+    return isoDate;
+  }
+}

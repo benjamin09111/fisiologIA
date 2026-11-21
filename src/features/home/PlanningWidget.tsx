@@ -7,7 +7,8 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 import { EvaluationPill } from '@/features/planning/EvaluationPill';
 import type { Planning } from '@/schemas/planning';
 import homeContent from '@/content/home.json';
-import { Calendar as CalendarIcon } from 'lucide-react';
+import { Calendar as CalendarIcon, CalendarPlus } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
 
 export interface PlanningWidgetProps {
   planning: Planning;
@@ -65,6 +66,16 @@ export function PlanningWidget({ planning }: PlanningWidgetProps) {
           {planning.evaluations.slice(0, 2).map((evalItem) => (
             <EvaluationPill key={evalItem.id} evaluation={evalItem} />
           ))}
+        </div>
+        <div className="mt-3 flex justify-end">
+          <Button
+            href="/planificacion"
+            variant="ghost"
+            size="sm"
+            iconLeft={<CalendarPlus className="h-3.5 w-3.5" />}
+          >
+            Google Calendar (Mock) →
+          </Button>
         </div>
       </div>
     </Card>

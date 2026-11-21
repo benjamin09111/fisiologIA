@@ -11,6 +11,7 @@ export const userSchema = z.object({
   career: z.string(),
   role: userRoleSchema,
   avatarUrl: z.string().nullable().optional(),
+  assignedTeacherId: z.string().optional(),
   currentCourseId: z.string().optional(),
   currentUnitId: z.string().optional(),
 });

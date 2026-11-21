@@ -9,10 +9,15 @@ import { ProgressRing } from '@/components/charts/ProgressRing';
 import { Mascot } from '@/components/brand/Mascot';
 import { SpeechBubble } from '@/components/brand/SpeechBubble';
 import { getProgress } from '@/services/progressService';
+import { getCourses } from '@/services/courseService';
 import { getPerformanceCategory } from '@/lib/progress';
+import { ProgressActivitiesChecklist } from '@/features/progress/ProgressActivitiesChecklist';
 
 export default async function ProgresoPage() {
-  const data = await getProgress();
+  const [data, coursesList] = await Promise.all([
+    getProgress(),
+    getCourses(),
+  ]);
   const { kpis, courses, strengths, weaknesses } = data;
 
   return (
@@ -89,6 +94,8 @@ export default async function ProgresoPage() {
             </div>
           </Card>
 
+          {/* Activities and tickets checklist */}
+          <ProgressActivitiesChecklist courses={coursesList} />
         </div>
 
         {/* Right Column (5 cols): Fortalezas, Debilidades y FisioBot */}

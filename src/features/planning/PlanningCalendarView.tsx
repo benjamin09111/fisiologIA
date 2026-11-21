@@ -2,11 +2,13 @@
 
 import * as React from 'react';
 import { useRouter } from 'next/navigation';
-import { Clock, MapPin, CalendarDays, BookOpen } from 'lucide-react';
+import { Clock, MapPin, CalendarDays, BookOpen, CalendarPlus } from 'lucide-react';
 import { Calendar } from '@/components/ui/Calendar';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
+import { Button } from '@/components/ui/Button';
 import { EvaluationPill } from '@/features/planning/EvaluationPill';
+import { GoogleCalendarSyncModal } from '@/features/planning/GoogleCalendarSyncModal';
 import type { Evaluation, StudyEvent, EventType } from '@/schemas/planning';
 import {
   parseYearMonth,
@@ -54,6 +56,12 @@ export function PlanningCalendarView({
   const [selectedDate, setSelectedDate] = React.useState<string>(
     initialDateStr || `${year}-${String(month + 1).padStart(2, '0')}-24`,
   );
+  const [modalEvent, setModalEvent] = React.useState<{
+    title: string;
+    date: string;
+    time?: string;
+    location?: string;
+  } | null>(null);
 
   const eventDates = React.useMemo(
     () => getEventDates(evaluations, events),
@@ -162,6 +170,24 @@ export function PlanningCalendarView({
                         <span>{evalItem.location}</span>
                       </div>
                     </div>
+
+                    <div className="pt-2 border-t border-border/40 flex justify-end">
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() =>
+                          setModalEvent({
+                            title: evalItem.title,
+                            date: evalItem.date,
+                            time: evalItem.time,
+                            location: evalItem.location,
+                          })
+                        }
+                        iconLeft={<CalendarPlus className="h-3.5 w-3.5" />}
+                      >
+                        Añadir a Google Calendar (Mock)
+                      </Button>
+                    </div>
                   </div>
                 );
               })}
@@ -210,6 +236,18 @@ export function PlanningCalendarView({
           </div>
         </Card>
       </div>
+
+      {/* Google Calendar Sync Modal */}
+      {modalEvent && (
+        <GoogleCalendarSyncModal
+          isOpen={!!modalEvent}
+          onClose={() => setModalEvent(null)}
+          eventTitle={modalEvent.title}
+          eventDate={modalEvent.date}
+          eventTime={modalEvent.time}
+          eventLocation={modalEvent.location}
+        />
+      )}
     </div>
   );
 }

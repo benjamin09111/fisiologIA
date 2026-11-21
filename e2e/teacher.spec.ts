@@ -21,21 +21,20 @@ test.describe('Panel Docente (/docente)', () => {
 
     await page.goto('/docente');
 
-    // PageHeader
+    // PageHeader & Anonymous Banner
     await expect(
       page.getByRole('heading', { name: 'Panel docente', level: 1 }),
     ).toBeVisible();
+    await expect(page.getByText('Métricas 100% Anónimas')).toBeVisible();
 
     // KPIs
     await expect(page.getByText('Estudiantes', { exact: true })).toBeVisible();
-    await expect(page.getByText('142')).toBeVisible();
-    await expect(page.getByText('Promedio general')).toBeVisible();
-    await expect(page.getByText('Tasa de aprobación')).toBeVisible();
-    await expect(page.getByText('88%')).toBeVisible();
+    await expect(page.getByText('Unidades', { exact: true })).toBeVisible();
+    await expect(page.getByText('Cohorte')).toBeVisible();
 
     // Chart & Table
-    await expect(page.getByText('Promedio por unidad temática')).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'Rendimiento por unidad' })).toBeVisible();
+    await expect(page.getByText('Respuestas correctas por unidad')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Avance y aciertos por unidad' })).toBeVisible();
     await expect(
       page.getByText('Mecánica ventilatoria').filter({ visible: true }).first(),
     ).toBeVisible();
@@ -50,5 +49,9 @@ test.describe('Panel Docente (/docente)', () => {
     await expect(
       page.getByText(/Localización del punto de mayor resistencia/),
     ).toBeVisible();
+
+    // Verify FisioIA is guarded for teacher role
+    await page.goto('/fisioia');
+    await expect(page.getByText('Tutor exclusivo para estudiantes')).toBeVisible();
   });
 });

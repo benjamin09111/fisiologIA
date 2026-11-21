@@ -72,6 +72,54 @@
             ],
             "content": "Los volúmenes pulmonares reflejan el estado funcional del sistema respiratorio. La espirometría mide volúmenes dinámicos y capacidades movilizables. Aquellas capacidades que incluyen el volumen residual, como la Capacidad Pulmonar Total (CPT) y la Capacidad Residual Funcional (CRF), requieren métodos de dilución de gases o pletismografía corporal."
           }
+        ],
+        "activities": [
+          {
+            "id": "act-1",
+            "title": "Video interactivo: Presiones transmurales y diafragma en ciclo respiratorio",
+            "type": "video",
+            "durationMinutes": 12,
+            "completed": true,
+            "completedAt": "2026-11-18T10:15:00.000Z",
+            "order": 1
+          },
+          {
+            "id": "act-2",
+            "title": "Lectura guiada: Ley de Laplace, surfactante y tensión alveolar",
+            "type": "reading",
+            "durationMinutes": 15,
+            "completed": true,
+            "completedAt": "2026-11-19T16:40:00.000Z",
+            "order": 2
+          },
+          {
+            "id": "act-3",
+            "title": "Simulador clínico: Curvas de compliance e histéresis pulmonar",
+            "type": "interactive",
+            "durationMinutes": 20,
+            "completed": false,
+            "completedAt": null,
+            "order": 3
+          },
+          {
+            "id": "act-4",
+            "title": "Caso aplicado: Resistencia de la vía aérea y crisis asmática",
+            "type": "interactive",
+            "durationMinutes": 15,
+            "completed": false,
+            "completedAt": null,
+            "order": 4
+          },
+          {
+            "id": "act-5",
+            "title": "Quiz evaluativo de unidad: Mecánica ventilatoria",
+            "type": "quiz",
+            "durationMinutes": 10,
+            "completed": false,
+            "completedAt": null,
+            "quizId": "quiz-mecanica-1",
+            "order": 5
+          }
         ]
       },
       {
@@ -93,6 +141,36 @@
             "order": 1,
             "keyPoints": ["CO2 difunde 20 veces más rápido que O2 debido a su mayor solubilidad."],
             "content": "La velocidad de difusión de un gas a través de la membrana alvéolo-capilar es directamente proporcional al área y al gradiente de presión parcial, e inversamente proporcional al espesor de la membrana."
+          }
+        ],
+        "activities": [
+          {
+            "id": "act-6",
+            "title": "Video explicativo: Ley de Fick y barrera alvéolo-capilar",
+            "type": "video",
+            "durationMinutes": 14,
+            "completed": false,
+            "completedAt": null,
+            "order": 1
+          },
+          {
+            "id": "act-7",
+            "title": "Lectura interactiva: Gradiente alvéolo-arterial de O2 (PA-aO2)",
+            "type": "reading",
+            "durationMinutes": 18,
+            "completed": false,
+            "completedAt": null,
+            "order": 2
+          },
+          {
+            "id": "act-8",
+            "title": "Quiz evaluativo de unidad: Difusión e intercambio",
+            "type": "quiz",
+            "durationMinutes": 12,
+            "completed": false,
+            "completedAt": null,
+            "quizId": "quiz-mecanica-1",
+            "order": 3
           }
         ]
       },
