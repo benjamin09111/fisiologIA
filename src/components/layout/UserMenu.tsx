@@ -7,7 +7,7 @@ import { Avatar } from '@/components/ui/Avatar';
 import { Badge } from '@/components/ui/Badge';
 import { switchRole } from '@/features/auth/actions';
 import type { User } from '@/schemas/user';
-import { ChevronDown, User as UserIcon, Palette, ArrowLeftRight, Lock } from 'lucide-react';
+import { ChevronDown, User as UserIcon, Palette, ArrowLeftRight } from 'lucide-react';
 
 export interface UserMenuProps {
   user: User;
@@ -94,50 +94,20 @@ export function UserMenu({ user }: UserMenuProps) {
               <span>Paleta de colores</span>
             </Link>
 
-            {process.env.NODE_ENV === 'development' && user.role === 'teacher' ? (
-              <button
-                type="button"
-                disabled={isPending}
-                onClick={handleToggleRole}
-                className="flex items-center justify-between w-full px-3 py-2 rounded-xl text-xs font-medium text-primary-strong hover:bg-primary-soft/40 transition-colors text-left"
-              >
-                <span className="flex items-center gap-2.5">
-                  <ArrowLeftRight className="h-4 w-4" />
-                  <span>Ver como estudiante (temporal)</span>
-                </span>
-              </button>
-            ) : process.env.NODE_ENV === 'development' ? (
-              <button
-                type="button"
-                disabled={isPending}
-                onClick={handleToggleRole}
-                className="flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-xs font-medium text-primary-strong transition-colors hover:bg-primary-soft/40"
-              >
-                <span className="flex items-center gap-2.5">
-                  <ArrowLeftRight className="h-4 w-4" />
-                  <span>Ver como docente (temporal)</span>
-                </span>
-                <span className="rounded bg-warning/15 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-warning">
-                  Solo desarrollo
-                </span>
-              </button>
-            ) : (
-              <button
-                type="button"
-                disabled
-                aria-disabled="true"
-                title="Panel docente en preparación"
-                className="flex items-center justify-between w-full px-3 py-2 rounded-xl text-xs font-medium text-muted cursor-not-allowed opacity-60 select-none"
-              >
-                <span className="flex items-center gap-2.5">
-                  <Lock className="h-4 w-4" />
-                  <span>Ver como docente (solo desarrollo)</span>
-                </span>
-                <span className="flex items-center gap-1 rounded bg-muted/20 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-muted">
-                  Bloqueado
-                </span>
-              </button>
-            )}
+            <button
+              type="button"
+              disabled={isPending}
+              onClick={handleToggleRole}
+              className="flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-xs font-medium text-primary-strong transition-colors hover:bg-primary-soft/40"
+            >
+              <span className="flex items-center gap-2.5">
+                <ArrowLeftRight className="h-4 w-4" />
+                <span>{user.role === 'teacher' ? 'Ver como estudiante' : 'Ver como docente'}</span>
+              </span>
+              <span className="rounded bg-primary-soft px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-primary-strong">
+                Demo
+              </span>
+            </button>
           </div>
         </div>
       )}
