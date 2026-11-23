@@ -18,6 +18,9 @@ import {
   HelpCircle,
   History,
   GraduationCap,
+  Users,
+  MessageSquareText,
+  AlertTriangle,
 } from 'lucide-react';
 
 const ICON_MAP: Record<NavIconType, React.ComponentType<{ className?: string }>> = {
@@ -32,6 +35,9 @@ const ICON_MAP: Record<NavIconType, React.ComponentType<{ className?: string }>>
   dashboard: LayoutDashboard,
   questions: HelpCircle,
   history: History,
+  students: Users,
+  inquiries: MessageSquareText,
+  analytics: AlertTriangle,
 };
 
 export interface NavItemProps {

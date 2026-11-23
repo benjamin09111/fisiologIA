@@ -2,11 +2,20 @@ import 'server-only';
 import { cache } from 'react';
 import teacherMock from '@/mocks/teacher-results.json';
 import teachersListData from '@/mocks/teachers.json';
+import teacherStudentsData from '@/mocks/teacher-students.json';
+import teacherInquiriesData from '@/mocks/teacher-inquiries.json';
+import teacherQuizErrorsData from '@/mocks/teacher-quiz-errors.json';
 import {
   teacherDashboardSchema,
   teacherProfileSchema,
+  studentOverviewSchema,
+  studentInquirySchema,
+  quizErrorTopicSchema,
   type TeacherDashboard,
   type TeacherProfile,
+  type StudentOverview,
+  type StudentInquiry,
+  type QuizErrorTopic,
 } from '@/schemas/teacher';
 import { z } from 'zod';
 
@@ -24,6 +33,18 @@ export const getTeacherResults = cache(async (teacherId?: string): Promise<Teach
     teacherId: matched.id,
     teacherName: matched.name,
     section: matched.section,
-    anonymousStudentCount: 46,
+    anonymousStudentCount: 48,
   };
+});
+
+export const getTeacherStudents = cache(async (): Promise<StudentOverview[]> => {
+  return z.array(studentOverviewSchema).parse(teacherStudentsData);
+});
+
+export const getTeacherStudentQuestions = cache(async (): Promise<StudentInquiry[]> => {
+  return z.array(studentInquirySchema).parse(teacherInquiriesData);
+});
+
+export const getQuizErrorAnalytics = cache(async (): Promise<QuizErrorTopic[]> => {
+  return z.array(quizErrorTopicSchema).parse(teacherQuizErrorsData);
 });

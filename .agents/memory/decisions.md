@@ -76,3 +76,11 @@ Formato: `## ADR-NNN — Título (fecha)` · Contexto · Decisión · Consecuenc
 ## ADR-017 — Vínculo anónimo Alumno-Docente y exclusión de FisioIA (2026-11-20)
 - **Decisión:** el alumno selecciona a su profesor/sección en `/configuracion`; los datos se consolidan anónimamente para la analítica del docente en `/docente` sin exponer nombres. FisioIA se restringe a rol estudiante y se remueve de la navegación docente.
 
+## ADR-018 — Centro de control docente: supervisión, alumnos, preguntas y refuerzo (2026-11-23)
+- **Contexto:** la vista docente requería convertirse en un centro de control completo para supervisar la cohorte, responder preguntas y diagnosticar falencias en quizes de forma interactiva para la demo.
+- **Decisión:**
+  1. Nueva ruta `/docente/alumnos` con buscador, filtros y modal de ficha pedagógica individual.
+  2. Nueva ruta `/docente/preguntas` para que el docente lea dudas clínicas/teóricas de sus alumnos y las responda interactivamente con persistencia en el estado.
+  3. Nueva ruta `/docente/reforzar` con análisis de distractores más elegidos, tasa de error por pregunta y recomendaciones didácticas para la clase.
+
+

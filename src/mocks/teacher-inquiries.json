@@ -1,0 +1,51 @@
+[
+  {
+    "id": "inq-1",
+    "studentAlias": "Estudiante #1042",
+    "unitTitle": "Mecánica ventilatoria",
+    "topicTitle": "Presiones y gradientes transmurales",
+    "questionText": "Doctor, tengo una duda con respecto a la presión intrapleural durante la inspiración forzada: si el diafragma se contrae más intensamente, ¿por qué la presión intrapleural se vuelve más negativa (-8 cmH2O) en lugar de aumentar por la compresión torácica?",
+    "createdAt": "Hoy, 09:15",
+    "status": "pending"
+  },
+  {
+    "id": "inq-2",
+    "studentAlias": "Estudiante #1152",
+    "unitTitle": "Mecánica ventilatoria",
+    "topicTitle": "Resistencia de la vía aérea y flujo",
+    "questionText": "¿Por qué en la ley de Poiseuille la mayor resistencia fisiológica se localiza en los bronquios medianos (generaciones 3 a 7) y no en los bronquiolos terminales que tienen un diámetro mucho menor?",
+    "createdAt": "Ayer, 16:45",
+    "status": "pending"
+  },
+  {
+    "id": "inq-3",
+    "studentAlias": "Estudiante #1278",
+    "unitTitle": "Difusión e intercambio gaseoso",
+    "topicTitle": "Ley de Fick y difusión alveolar",
+    "questionText": "Si el oxígeno es más liviano que el dióxido de carbono en peso molecular, ¿por qué el CO2 difunde unas 20 veces más rápido a través de la barrera alvéolo-capilar?",
+    "createdAt": "Ayer, 11:30",
+    "status": "pending"
+  },
+  {
+    "id": "inq-4",
+    "studentAlias": "Estudiante #1104",
+    "unitTitle": "Mecánica ventilatoria",
+    "topicTitle": "Distensibilidad y surfactante",
+    "questionText": "¿Cuál es el mecanismo biofísico exacto por el cual la dipalmitoilfosfatidilcolina (surfactante) evita el vaciamiento de los alvéolos más pequeños hacia los más grandes según la fórmula de Laplace (P = 2T/r)?",
+    "createdAt": "19 de noviembre, 14:10",
+    "status": "answered",
+    "teacherAnswer": "Excelente pregunta. En ausencia de surfactante, la tensión superficial (T) sería idéntica en alvéolos grandes y chicos, por lo que la presión colapsante (P) sería inversamente proporcional al radio (mayor en los chicos). El surfactante reduce T de forma mucho más concentrada en los alvéolos de menor radio al comprimirse sus moléculas durante la espiración, equilibrando las presiones y evitando el colapso (atelectasia).",
+    "answeredAt": "19 de noviembre, 17:20"
+  },
+  {
+    "id": "inq-5",
+    "studentAlias": "Estudiante #1190",
+    "unitTitle": "Mecánica ventilatoria",
+    "topicTitle": "Volúmenes y capacidades pulmonares",
+    "questionText": "¿Por qué no es posible medir la Capacidad Residual Funcional (CRF) mediante una espirometría convencional de circuito abierto?",
+    "createdAt": "18 de noviembre, 10:05",
+    "status": "answered",
+    "teacherAnswer": "Porque la CRF contiene el Volumen Residual (VR), que es el volumen de aire que permanece en los pulmones incluso tras una espiración forzada máxima. El espirómetro solo puede medir volúmenes de gas que entran y salen de la boca. Para medir el VR y la CRF se requieren métodos indirectos como la pletismografía corporal o la dilución con helio.",
+    "answeredAt": "18 de noviembre, 12:40"
+  }
+]

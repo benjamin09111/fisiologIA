@@ -30,6 +30,11 @@ Plan detallado: `PLAN_IMPLEMENTACION.md`.
   - [x] 4. Nuevo módulo "Mis notas" (`/notas`): escala estándar universitaria chilena (base 1.0 a 7.0, aprobación 4.0), promedio ponderado automático, notas requeridas y reglamento.
   - [x] 5. Vínculo anónimo Alumno-Docente: selección de docente/sección en `/configuracion` y panel docente consolidado 100% anónimo (`/docente`). FisioIA retirado de la vista docente.
   - [x] 6. Opción Google Calendar Mock: acción y modal de sincronización en `/planificacion` y widget de `/inicio`.
+- [x] Rediseño y expansión del Panel Docente para Demo (2026-11-23):
+  - [x] Centro de control docente en `/docente` con accesos rápidos y métricas consolidadas.
+  - [x] Módulo "Mis alumnos" (`/docente/alumnos`) con filtros, buscador y ficha pedagógica individual en modal.
+  - [x] Módulo "Consultas de alumnos" (`/docente/preguntas`) para ver y responder dudas clínicas/teóricas con feedback interactivo.
+  - [x] Módulo "Contenidos a reforzar" (`/docente/reforzar`) con diagnóstico de errores frecuentes en quizes, distractores y consejos didácticos.
 
 ## Inventario UI (`src/components/ui/`)
 

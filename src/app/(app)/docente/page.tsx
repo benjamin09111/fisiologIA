@@ -1,5 +1,15 @@
 import * as React from 'react';
-import { ArrowRight, ShieldAlert, BookOpenCheck, Target, Users, ShieldCheck } from 'lucide-react';
+import {
+  ArrowRight,
+  ShieldAlert,
+  BookOpenCheck,
+  Target,
+  Users,
+  ShieldCheck,
+  MessageSquare,
+  TrendingDown,
+  HelpCircle,
+} from 'lucide-react';
 import { PageHeader } from '@/components/layout/PageHeader';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
@@ -7,7 +17,11 @@ import { Button } from '@/components/ui/Button';
 import { Table, type Column } from '@/components/ui/Table';
 import { BarChart } from '@/components/charts/BarChart';
 import { getCurrentUser } from '@/services/userService';
-import { getTeacherResults } from '@/services/teacherService';
+import {
+  getTeacherResults,
+  getTeacherStudentQuestions,
+  getQuizErrorAnalytics,
+} from '@/services/teacherService';
 import { getUnitScoreStatus, formatUnitsChartData } from '@/lib/teacher';
 import type { UnitStats } from '@/schemas/teacher';
 
@@ -41,9 +55,15 @@ export default async function DocentePanelPage() {
     );
   }
 
-  const results = await getTeacherResults();
+  const [results, inquiries, errorTopics] = await Promise.all([
+    getTeacherResults(),
+    getTeacherStudentQuestions(),
+    getQuizErrorAnalytics(),
+  ]);
+
   const { unitsStats } = results;
   const chartData = formatUnitsChartData(unitsStats);
+  const pendingInquiriesCount = inquiries.filter((q) => q.status === 'pending').length;
 
   const columns: Column<UnitStats>[] = [
     {
@@ -152,6 +172,118 @@ export default async function DocentePanelPage() {
           </div>
         </Card>
       </section>
+
+      {/* Controller Quick Access Modules */}
+      <div className="space-y-3">
+        <h2 className="text-sm font-bold uppercase tracking-wider text-muted">
+          Centro de control docente
+        </h2>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Mis alumnos */}
+          <Card className="p-5 flex flex-col justify-between border-border/80 hover:border-primary/50 transition-all group">
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-soft text-primary-strong">
+                  <Users className="h-5 w-5" />
+                </div>
+                <Badge variant="primary" size="sm">
+                  {results.anonymousStudentCount ?? 48} alumnos
+                </Badge>
+              </div>
+              <h3 className="text-sm font-bold text-text group-hover:text-primary-strong transition-colors">
+                Mis alumnos
+              </h3>
+              <p className="text-xs text-muted leading-relaxed">
+                Supervisa el avance individual, alertas pedagógicas y fichas de rendimiento.
+              </p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-border/40">
+              <Button href="/docente/alumnos" variant="ghost" size="sm" className="w-full justify-between">
+                <span>Ver lista de alumnos</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Button>
+            </div>
+          </Card>
+
+          {/* Consultas y preguntas */}
+          <Card className="p-5 flex flex-col justify-between border-border/80 hover:border-primary/50 transition-all group">
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent-soft text-accent-strong">
+                  <MessageSquare className="h-5 w-5" />
+                </div>
+                <Badge tone={pendingInquiriesCount > 0 ? 'warning' : 'success'} size="sm">
+                  {pendingInquiriesCount} pendientes
+                </Badge>
+              </div>
+              <h3 className="text-sm font-bold text-text group-hover:text-primary-strong transition-colors">
+                Consultas de alumnos
+              </h3>
+              <p className="text-xs text-muted leading-relaxed">
+                Buzón de dudas teóricas y clínicas enviadas por tus estudiantes para responder.
+              </p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-border/40">
+              <Button href="/docente/preguntas" variant="ghost" size="sm" className="w-full justify-between">
+                <span>Responder preguntas</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Button>
+            </div>
+          </Card>
+
+          {/* Contenidos a reforzar */}
+          <Card className="p-5 flex flex-col justify-between border-border/80 hover:border-primary/50 transition-all group">
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-rose-500/15 text-rose-600 dark:text-rose-400">
+                  <TrendingDown className="h-5 w-5" />
+                </div>
+                <Badge tone="danger" size="sm">
+                  {errorTopics[0]?.failureRate}% error máx
+                </Badge>
+              </div>
+              <h3 className="text-sm font-bold text-text group-hover:text-primary-strong transition-colors">
+                Contenidos a reforzar
+              </h3>
+              <p className="text-xs text-muted leading-relaxed">
+                Diagnóstico de preguntas de quizes donde más se equivocan y consejos didácticos.
+              </p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-border/40">
+              <Button href="/docente/reforzar" variant="ghost" size="sm" className="w-full justify-between">
+                <span>Ver diagnóstico</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Button>
+            </div>
+          </Card>
+
+          {/* Banco de preguntas */}
+          <Card className="p-5 flex flex-col justify-between border-border/80 hover:border-primary/50 transition-all group">
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-surface-raised text-muted">
+                  <HelpCircle className="h-5 w-5" />
+                </div>
+                <Badge variant="muted" size="sm">
+                  Evaluaciones
+                </Badge>
+              </div>
+              <h3 className="text-sm font-bold text-text group-hover:text-primary-strong transition-colors">
+                Banco de preguntas
+              </h3>
+              <p className="text-xs text-muted leading-relaxed">
+                Gestión de reactivos, opciones y explicaciones para quizes y solemnes.
+              </p>
+            </div>
+            <div className="mt-4 pt-3 border-t border-border/40">
+              <Button href="/docente/ejercicios" variant="ghost" size="sm" className="w-full justify-between">
+                <span>Gestionar banco</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Button>
+            </div>
+          </Card>
+        </div>
+      </div>
 
       {/* Main Grid: BarChart + Units Table */}
       <div className="space-y-8">

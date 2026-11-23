@@ -1,0 +1,130 @@
+[
+  {
+    "id": "std-1042",
+    "alias": "Estudiante #1042",
+    "section": "Sección 1 (Cátedra A)",
+    "contentProgress": 45,
+    "quizAccuracy": 52,
+    "quizzesTaken": 6,
+    "lastActive": "Hoy, 10:15",
+    "status": "support_needed",
+    "strongTopics": ["Volúmenes pulmonares y espirometría simple"],
+    "weakTopics": ["Presión intrapleural y gradiente transpulmonar", "Ley de Poiseuille y resistencia en vía aérea"],
+    "recentQuizAttempts": [
+      { "quizTitle": "Quiz Mecánica Ventilatoria 1", "score": 40, "date": "2026-11-21" },
+      { "quizTitle": "Control Formativo Distensibilidad", "score": 50, "date": "2026-11-18" }
+    ]
+  },
+  {
+    "id": "std-1088",
+    "alias": "Estudiante #1088",
+    "section": "Sección 1 (Cátedra A)",
+    "contentProgress": 85,
+    "quizAccuracy": 90,
+    "quizzesTaken": 14,
+    "lastActive": "Hoy, 09:40",
+    "status": "excellent",
+    "strongTopics": ["Curvas presión-volumen", "Difusión alveolar", "Ley de Laplace"],
+    "weakTopics": ["Resistencia en bronquios medianos"],
+    "recentQuizAttempts": [
+      { "quizTitle": "Quiz Mecánica Ventilatoria 1", "score": 100, "date": "2026-11-22" },
+      { "quizTitle": "Control Difusión de Gases", "score": 90, "date": "2026-11-19" }
+    ]
+  },
+  {
+    "id": "std-1104",
+    "alias": "Estudiante #1104",
+    "section": "Sección 1 (Cátedra A)",
+    "contentProgress": 65,
+    "quizAccuracy": 76,
+    "quizzesTaken": 9,
+    "lastActive": "Ayer, 18:22",
+    "status": "good",
+    "strongTopics": ["Surfactante pulmonar", "Capacidad Residual Funcional (CRF)"],
+    "weakTopics": ["Trabajo respiratorio e histéresis pulmonar"],
+    "recentQuizAttempts": [
+      { "quizTitle": "Quiz Mecánica Ventilatoria 1", "score": 80, "date": "2026-11-20" },
+      { "quizTitle": "Evaluación Formativa Volúmenes", "score": 75, "date": "2026-11-15" }
+    ]
+  },
+  {
+    "id": "std-1152",
+    "alias": "Estudiante #1152",
+    "section": "Sección 1 (Cátedra A)",
+    "contentProgress": 38,
+    "quizAccuracy": 48,
+    "quizzesTaken": 5,
+    "lastActive": "Hace 3 días",
+    "status": "support_needed",
+    "strongTopics": ["Músculos inspiratorios y espiratorios"],
+    "weakTopics": ["Cálculo de compliance estática", "Punto de igual presión (PIP)"],
+    "recentQuizAttempts": [
+      { "quizTitle": "Quiz Mecánica Ventilatoria 1", "score": 40, "date": "2026-11-14" },
+      { "quizTitle": "Control Presiones Torácicas", "score": 50, "date": "2026-11-10" }
+    ]
+  },
+  {
+    "id": "std-1190",
+    "alias": "Estudiante #1190",
+    "section": "Sección 1 (Cátedra A)",
+    "contentProgress": 72,
+    "quizAccuracy": 82,
+    "quizzesTaken": 11,
+    "lastActive": "Hoy, 12:05",
+    "status": "good",
+    "strongTopics": ["Propiedades del surfactante", "Mecánica del diafragma"],
+    "weakTopics": ["Efecto de la aceleración del flujo"],
+    "recentQuizAttempts": [
+      { "quizTitle": "Quiz Mecánica Ventilatoria 1", "score": 80, "date": "2026-11-21" },
+      { "quizTitle": "Paso Práctico Espirometría", "score": 85, "date": "2026-11-17" }
+    ]
+  },
+  {
+    "id": "std-1205",
+    "alias": "Estudiante #1205",
+    "section": "Sección 1 (Cátedra A)",
+    "contentProgress": 95,
+    "quizAccuracy": 96,
+    "quizzesTaken": 15,
+    "lastActive": "Hoy, 14:10",
+    "status": "excellent",
+    "strongTopics": ["Ventilación alveolar", "Cascada de presiones", "Compliance de la caja torácica"],
+    "weakTopics": [],
+    "recentQuizAttempts": [
+      { "quizTitle": "Quiz Mecánica Ventilatoria 1", "score": 100, "date": "2026-11-22" },
+      { "quizTitle": "Quiz Difusión Gases", "score": 100, "date": "2026-11-20" }
+    ]
+  },
+  {
+    "id": "std-1233",
+    "alias": "Estudiante #1233",
+    "section": "Sección 1 (Cátedra A)",
+    "contentProgress": 58,
+    "quizAccuracy": 68,
+    "quizzesTaken": 8,
+    "lastActive": "Ayer, 21:40",
+    "status": "good",
+    "strongTopics": ["Volumen corriente y espacio muerto anatómico"],
+    "weakTopics": ["Relación radio y resistencia (r^4)"],
+    "recentQuizAttempts": [
+      { "quizTitle": "Quiz Mecánica Ventilatoria 1", "score": 60, "date": "2026-11-19" },
+      { "quizTitle": "Repaso Volúmenes", "score": 70, "date": "2026-11-16" }
+    ]
+  },
+  {
+    "id": "std-1278",
+    "alias": "Estudiante #1278",
+    "section": "Sección 1 (Cátedra A)",
+    "contentProgress": 40,
+    "quizAccuracy": 50,
+    "quizzesTaken": 6,
+    "lastActive": "Hace 2 días",
+    "status": "support_needed",
+    "strongTopics": ["Anatomía funcional de la vía aérea"],
+    "weakTopics": ["Ecuación de ventilación alveolar", "Gradiente A-a de O2"],
+    "recentQuizAttempts": [
+      { "quizTitle": "Quiz Mecánica Ventilatoria 1", "score": 40, "date": "2026-11-18" },
+      { "quizTitle": "Control Formativo Presiones", "score": 60, "date": "2026-11-12" }
+    ]
+  }
+]

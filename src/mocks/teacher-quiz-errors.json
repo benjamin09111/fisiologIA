@@ -1,0 +1,62 @@
+[
+  {
+    "id": "err-1",
+    "questionId": "q-4",
+    "unitTitle": "Mecánica ventilatoria",
+    "topicTitle": "Resistencia de la vía aérea (Poiseuille)",
+    "questionText": "¿En qué segmento del árbol traqueobronquial se localiza la mayor resistencia al flujo aéreo durante la respiración tranquila normal?",
+    "failureRate": 64,
+    "totalAttempts": 156,
+    "wrongAttemptsCount": 100,
+    "mostChosenDistractor": "Bronquiolos terminales (< 1 mm de diámetro)",
+    "distractorPercentage": 46,
+    "correctAnswer": "Bronquios de mediano calibre (generaciones 3 a 7)",
+    "pedagogicalRecommendation": "El 46% de los alumnos asume erróneamente que a menor diámetro individual siempre hay mayor resistencia, olvidando que los bronquiolos terminales están dispuestos en paralelo masivo, lo que aumenta enormemente el área de sección transversal total. Reforzar la analogía de resistencias en paralelo en la próxima clase.",
+    "difficultyLevel": "alta"
+  },
+  {
+    "id": "err-2",
+    "questionId": "q-fick",
+    "unitTitle": "Difusión e intercambio gaseoso",
+    "topicTitle": "Ley de Fick y coeficiente de solubilidad",
+    "questionText": "A pesar de tener un gradiente de presión parcial significativamente menor (6 mmHg frente a 60 mmHg del O2), ¿por qué el CO2 se transfiere eficientemente a través de la membrana alvéolo-capilar?",
+    "failureRate": 52,
+    "totalAttempts": 98,
+    "wrongAttemptsCount": 51,
+    "mostChosenDistractor": "Porque su peso molecular es inferior al del oxígeno molecular",
+    "distractorPercentage": 38,
+    "correctAnswer": "Porque su solubilidad en agua y lípidos tisulares es aproximadamente 20 veces mayor",
+    "pedagogicalRecommendation": "38% confunde la ley de Graham con la solubilidad de Henry en la constante de difusión de Fick. Insistir en que la solubilidad predomina radicalmente sobre la raíz cuadrada del peso molecular.",
+    "difficultyLevel": "alta"
+  },
+  {
+    "id": "err-3",
+    "questionId": "q-laplace",
+    "unitTitle": "Mecánica ventilatoria",
+    "topicTitle": "Distensibilidad y surfactante",
+    "questionText": "Según la ley de Laplace (P = 2T/r), si dos alvéolos intercomunicados de distinto radio carecieran de surfactante, ¿qué fenómeno físico ocurriría?",
+    "failureRate": 44,
+    "totalAttempts": 142,
+    "wrongAttemptsCount": 62,
+    "mostChosenDistractor": "Ambos alvéolos se expandirían uniformemente hasta igualar sus diámetros",
+    "distractorPercentage": 31,
+    "correctAnswer": "El alvéolo más pequeño se vaciaría hacia el más grande, colapsando (atelectasia)",
+    "pedagogicalRecommendation": "Varios alumnos asumen un comportamiento elástico lineal en vez de la presión inversamente proporcional al radio generada por la tensión superficial líquida. Mostrar la animación de dos burbujas comunicadas.",
+    "difficultyLevel": "media"
+  },
+  {
+    "id": "err-4",
+    "questionId": "q-crf",
+    "unitTitle": "Mecánica ventilatoria",
+    "topicTitle": "Presiones y CRF",
+    "questionText": "Al final de una espiración normal en reposo (en Capacidad Residual Funcional), ¿cuál es el estado de la presión intrapleural respecto a la presión atmosférica?",
+    "failureRate": 36,
+    "totalAttempts": 160,
+    "wrongAttemptsCount": 58,
+    "mostChosenDistractor": "0 cmH2O (exactamente igual a la presión atmosférica)",
+    "distractorPercentage": 24,
+    "correctAnswer": "Aproximadamente -5 cmH2O (subatmosférica / negativa)",
+    "pedagogicalRecommendation": "Recordar que el equilibrio elástico de CRF es entre el retroceso elástico centrípeto del pulmón y la tendencia centrífuga expansiva de la caja torácica, lo que mantiene la presión intrapleural negativa permanente.",
+    "difficultyLevel": "media"
+  }
+]
