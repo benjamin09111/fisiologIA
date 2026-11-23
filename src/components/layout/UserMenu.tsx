@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { Avatar } from '@/components/ui/Avatar';
 import { Badge } from '@/components/ui/Badge';
 import { switchRole } from '@/features/auth/actions';
@@ -16,7 +15,6 @@ export interface UserMenuProps {
 export function UserMenu({ user }: UserMenuProps) {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isPending, startTransition] = React.useTransition();
-  const router = useRouter();
   const menuRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
@@ -32,13 +30,13 @@ export function UserMenu({ user }: UserMenuProps) {
   const handleToggleRole = () => {
     const nextRole = user.role === 'teacher' ? 'student' : 'teacher';
     startTransition(async () => {
-      await switchRole(nextRole);
-      setIsOpen(false);
-      router.refresh();
-      if (nextRole === 'teacher') {
-        router.push('/docente');
-      } else {
-        router.push('/inicio');
+      const res = await switchRole(nextRole);
+      if (res.success) {
+        setIsOpen(false);
+        const targetPath = nextRole === 'teacher' ? '/docente' : '/inicio';
+        // Forzar navegación dura para que todas las Server Components y layouts
+        // recarguen con la cookie fisio-role actualizada de inmediato
+        window.location.href = targetPath;
       }
     });
   };

@@ -7,10 +7,6 @@ import { ROLE_COOKIE_NAME } from '@/services/userService';
 export async function switchRole(
   role: unknown,
 ): Promise<{ success: boolean; role?: UserRole; error?: string }> {
-  if (process.env.NODE_ENV !== 'development') {
-    return { success: false, error: 'El cambio de rol mock solo está disponible en desarrollo' };
-  }
-
   const result = userRoleSchema.safeParse(role);
   if (!result.success) {
     return { success: false, error: 'Rol inválido' };
