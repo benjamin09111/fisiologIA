@@ -21,6 +21,7 @@ import {
   Users,
   MessageSquareText,
   AlertTriangle,
+  CheckSquare,
 } from 'lucide-react';
 
 const ICON_MAP: Record<NavIconType, React.ComponentType<{ className?: string }>> = {
@@ -34,6 +35,7 @@ const ICON_MAP: Record<NavIconType, React.ComponentType<{ className?: string }>>
   settings: Settings,
   dashboard: LayoutDashboard,
   questions: HelpCircle,
+  quizzes: CheckSquare,
   history: History,
   students: Users,
   inquiries: MessageSquareText,

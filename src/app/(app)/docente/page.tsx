@@ -8,7 +8,6 @@ import {
   ShieldCheck,
   MessageSquare,
   TrendingDown,
-  HelpCircle,
 } from 'lucide-react';
 import { PageHeader } from '@/components/layout/PageHeader';
 import { Card } from '@/components/ui/Card';
@@ -257,27 +256,27 @@ export default async function DocentePanelPage() {
             </div>
           </Card>
 
-          {/* Banco de preguntas */}
+          {/* Gestión de Quizzes */}
           <Card className="p-5 flex flex-col justify-between border-border/80 hover:border-primary/50 transition-all group">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-surface-raised text-muted">
-                  <HelpCircle className="h-5 w-5" />
+                  <BookOpenCheck className="h-5 w-5" />
                 </div>
-                <Badge variant="muted" size="sm">
+                <Badge tone="active">
                   Evaluaciones
                 </Badge>
               </div>
               <h3 className="text-sm font-bold text-text group-hover:text-primary-strong transition-colors">
-                Banco de preguntas
+                Quizzes rápidos
               </h3>
               <p className="text-xs text-muted leading-relaxed">
-                Gestión de reactivos, opciones y explicaciones para quizes y solemnes.
+                Creación con plantillas, envío a correos y paneles de alumnos, y métricas de resultados.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-border/40">
-              <Button href="/docente/ejercicios" variant="ghost" size="sm" className="w-full justify-between">
-                <span>Gestionar banco</span>
+              <Button href="/docente/quizzes" variant="ghost" size="sm" className="w-full justify-between">
+                <span>Gestionar quizzes</span>
                 <ArrowRight className="h-3.5 w-3.5" />
               </Button>
             </div>

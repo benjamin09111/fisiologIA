@@ -11,6 +11,7 @@ export type NavIconType =
   | 'settings'
   | 'dashboard'
   | 'questions'
+  | 'quizzes'
   | 'history'
   | 'students'
   | 'inquiries'
@@ -37,9 +38,9 @@ export const STUDENT_NAV_ITEMS: NavItemConfig[] = [
 export const TEACHER_NAV_ITEMS: NavItemConfig[] = [
   { label: 'Supervisión del curso', href: '/docente', icon: 'dashboard' },
   { label: 'Mis alumnos', href: '/docente/alumnos', icon: 'students', badge: '48' },
+  { label: 'Quizzes', href: '/docente/quizzes', icon: 'quizzes' },
   { label: 'Consultas de alumnos', href: '/docente/preguntas', icon: 'inquiries', badge: '3' },
   { label: 'Contenidos a reforzar', href: '/docente/reforzar', icon: 'analytics' },
-  { label: 'Banco de preguntas', href: '/docente/ejercicios', icon: 'questions' },
   { label: 'Biblioteca', href: '/biblioteca', icon: 'library' },
   { label: 'Configuración', href: '/configuracion', icon: 'settings' },
 ];

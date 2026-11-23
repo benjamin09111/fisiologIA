@@ -1,0 +1,29 @@
+[
+  {
+    "id": "tpl-mecanica-express",
+    "title": "Control Express: Mecánica Ventilatoria",
+    "description": "5 preguntas clave de gradiente transmural, presiones intrapleurales y ley de Boyle.",
+    "unitTitle": "Mecánica Ventilatoria",
+    "defaultQuestionsCount": 5,
+    "suggestedMinutes": 8,
+    "difficulty": "intermedia"
+  },
+  {
+    "id": "tpl-gasometria-rapida",
+    "title": "Diagnóstico Rápido: Gasometría y Difusión",
+    "description": "Casos clínicos cortos con valores de PaO2, PaCO2 y cálculo de gradiente alvéolo-arterial.",
+    "unitTitle": "Intercambio de Gases",
+    "defaultQuestionsCount": 6,
+    "suggestedMinutes": 10,
+    "difficulty": "avanzada"
+  },
+  {
+    "id": "tpl-control-neuro",
+    "title": "Quiz Inicial: Centro Respiratorio y Quimiorreceptores",
+    "description": "Verificación diagnóstica antes de iniciar la sesión de quimiorreflejos centrales y periféricos.",
+    "unitTitle": "Control de la Respiración",
+    "defaultQuestionsCount": 4,
+    "suggestedMinutes": 6,
+    "difficulty": "básica"
+  }
+]

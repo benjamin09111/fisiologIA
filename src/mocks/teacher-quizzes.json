@@ -1,0 +1,118 @@
+[
+  {
+    "id": "tq-1",
+    "title": "Quiz Formativo 1: Mecánica Ventilatoria y Curvas PV",
+    "description": "Evaluación rápida previa a la Solemne 1 sobre elastancia pulmonar, compliance y volumen de cierre.",
+    "courseId": "fisiologia-respiratoria",
+    "unitTitle": "Mecánica Ventilatoria",
+    "questionsCount": 5,
+    "timeMinutes": 10,
+    "createdAt": "2026-11-20T10:00:00Z",
+    "status": "published",
+    "shareUrl": "https://fisiologia.app/ejercicios/cuestionarios/quiz-mecanica-1",
+    "sentToPanel": true,
+    "sentToEmail": true,
+    "totalSubmissions": 38,
+    "averageScore": 5.4,
+    "results": [
+      {
+        "attemptId": "att-101",
+        "studentAlias": "Estudiante #1042",
+        "submittedAt": "2026-11-21T14:32:00Z",
+        "score": 6.2,
+        "correctAnswers": 4,
+        "totalQuestions": 5,
+        "timeSpentMinutes": 7
+      },
+      {
+        "attemptId": "att-102",
+        "studentAlias": "Estudiante #2093",
+        "submittedAt": "2026-11-21T15:10:00Z",
+        "score": 4.8,
+        "correctAnswers": 3,
+        "totalQuestions": 5,
+        "timeSpentMinutes": 9
+      },
+      {
+        "attemptId": "att-103",
+        "studentAlias": "Estudiante #3811",
+        "submittedAt": "2026-11-21T16:05:00Z",
+        "score": 3.6,
+        "correctAnswers": 2,
+        "totalQuestions": 5,
+        "timeSpentMinutes": 10
+      },
+      {
+        "attemptId": "att-104",
+        "studentAlias": "Estudiante #4190",
+        "submittedAt": "2026-11-21T18:22:00Z",
+        "score": 7.0,
+        "correctAnswers": 5,
+        "totalQuestions": 5,
+        "timeSpentMinutes": 5
+      },
+      {
+        "attemptId": "att-105",
+        "studentAlias": "Estudiante #5214",
+        "submittedAt": "2026-11-22T09:15:00Z",
+        "score": 5.5,
+        "correctAnswers": 4,
+        "totalQuestions": 5,
+        "timeSpentMinutes": 8
+      }
+    ]
+  },
+  {
+    "id": "tq-2",
+    "title": "Mini-Quiz: Ventilación Alveolar y Espacio Muerto",
+    "description": "Comprobación de lectura interactiva antes del laboratorio práctico de espirometría.",
+    "courseId": "fisiologia-respiratoria",
+    "unitTitle": "Ventilación y Perfusión",
+    "questionsCount": 4,
+    "timeMinutes": 8,
+    "createdAt": "2026-11-22T12:00:00Z",
+    "status": "published",
+    "shareUrl": "https://fisiologia.app/ejercicios/cuestionarios/quiz-mecanica-1",
+    "sentToPanel": true,
+    "sentToEmail": false,
+    "totalSubmissions": 26,
+    "averageScore": 5.8,
+    "results": [
+      {
+        "attemptId": "att-201",
+        "studentAlias": "Estudiante #1042",
+        "submittedAt": "2026-11-22T14:10:00Z",
+        "score": 6.5,
+        "correctAnswers": 4,
+        "totalQuestions": 4,
+        "timeSpentMinutes": 5
+      },
+      {
+        "attemptId": "att-202",
+        "studentAlias": "Estudiante #3811",
+        "submittedAt": "2026-11-22T17:40:00Z",
+        "score": 5.0,
+        "correctAnswers": 3,
+        "totalQuestions": 4,
+        "timeSpentMinutes": 7
+      }
+    ]
+  },
+  {
+    "id": "tq-3",
+    "title": "Borrador: Control Quimiorreflejo y pH",
+    "description": "Diseñado para la semana de repaso antes de la segunda evaluación parcial.",
+    "courseId": "fisiologia-respiratoria",
+    "unitTitle": "Control Respiratorio",
+    "questionsCount": 6,
+    "timeMinutes": 12,
+    "createdAt": "2026-11-23T08:00:00Z",
+    "status": "draft",
+    "shareUrl": "https://fisiologia.app/ejercicios/cuestionarios/quiz-mecanica-1",
+    "sentToPanel": false,
+    "sentToEmail": false,
+    "totalSubmissions": 0,
+    "averageScore": 0,
+    "results": []
+  }
+]

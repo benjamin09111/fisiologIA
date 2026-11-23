@@ -98,3 +98,47 @@ export const quizErrorTopicSchema = z.object({
 });
 
 export type QuizErrorTopic = z.infer<typeof quizErrorTopicSchema>;
+
+export const teacherQuizResultSchema = z.object({
+  attemptId: z.string(),
+  studentAlias: z.string(),
+  submittedAt: z.string(),
+  score: z.number().min(1.0).max(7.0),
+  correctAnswers: z.number(),
+  totalQuestions: z.number(),
+  timeSpentMinutes: z.number(),
+});
+
+export type TeacherQuizResult = z.infer<typeof teacherQuizResultSchema>;
+
+export const teacherQuizItemSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  description: z.string(),
+  courseId: z.string(),
+  unitTitle: z.string(),
+  questionsCount: z.number(),
+  timeMinutes: z.number(),
+  createdAt: z.string(),
+  status: z.enum(['draft', 'published', 'closed']),
+  shareUrl: z.string(),
+  sentToPanel: z.boolean(),
+  sentToEmail: z.boolean(),
+  totalSubmissions: z.number(),
+  averageScore: z.number(),
+  results: z.array(teacherQuizResultSchema),
+});
+
+export type TeacherQuizItem = z.infer<typeof teacherQuizItemSchema>;
+
+export const quizTemplateSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  description: z.string(),
+  unitTitle: z.string(),
+  defaultQuestionsCount: z.number(),
+  suggestedMinutes: z.number(),
+  difficulty: z.enum(['básica', 'intermedia', 'avanzada']),
+});
+
+export type QuizTemplate = z.infer<typeof quizTemplateSchema>;
