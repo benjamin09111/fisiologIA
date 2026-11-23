@@ -82,7 +82,6 @@ export function TeacherQuizzesView({ initialQuizzes, templates }: TeacherQuizzes
     // Reset
     setTitle('');
     setDescription('');
-    setSelectedTemplateId('');
   };
 
   const handleCopyLink = (url: string) => {
